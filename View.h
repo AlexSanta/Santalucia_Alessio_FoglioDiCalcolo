@@ -1,0 +1,8 @@
+//
+// Created by Alessio on 11/11/2021.
+//
+
+#ifndef FOGLIODICALCOLO_VIEW_H
+#define FOGLIODICALCOLO_VIEW_H
+
+#endif //FOGLIODICALCOLO_VIEW_H

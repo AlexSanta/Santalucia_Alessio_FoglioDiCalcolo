@@ -1,0 +1,8 @@
+//
+// Created by Alessio on 11/11/2021.
+//
+
+#ifndef FOGLIODICALCOLO_SUBJECT_H
+#define FOGLIODICALCOLO_SUBJECT_H
+
+#endif //FOGLIODICALCOLO_SUBJECT_H
