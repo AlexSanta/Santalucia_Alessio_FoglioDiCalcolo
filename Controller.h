@@ -6,7 +6,7 @@
 
 class Controller {
 public:
-    explicit Controller(Model *m) : model(m) {}
+    explicit Controller(Model *m);
 
     void modify(const int i, const int j, const QString qLab);
 
@@ -20,6 +20,8 @@ public:
 
 private:
     Model *model;
+    int nce;
+    int ncu;
 };
 
 #endif //FOGLIODICALCOLO_CONTROLLER_H
