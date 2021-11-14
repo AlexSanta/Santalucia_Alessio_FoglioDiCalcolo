@@ -10,3 +10,9 @@ View::~View() {
     model->removeObserver(this);
     delete ui;
 }
+
+void View::update() {
+}
+
+void View::onCellChanged(int i, int j) {
+}
