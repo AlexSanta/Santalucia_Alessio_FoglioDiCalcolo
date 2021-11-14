@@ -34,6 +34,8 @@ public:
 
         tW->setHorizontalHeaderLabels({"A", "B", "C", "D", "Somma", "Media", "Min", "Max"});
         tW->setVerticalHeaderLabels({"A", "B", "C", "D"});
+        tW->setGeometry(0, 0, 819, 145);
+        View->resize(819, 145);
         View->setWindowFlags(Qt::Window | Qt::MSWindowsFixedSizeDialogHint); //finestra non espandibile
         View->setWindowTitle("Foglio di calcolo");
         View->setCentralWidget(ViewWidget);
