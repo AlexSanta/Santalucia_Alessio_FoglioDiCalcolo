@@ -6,7 +6,14 @@ Controller::Controller(Model *m) : model(m) {
 }
 
 void Controller::modify(const int i, const int j, const QString qLab) {
-
+    model->setIndex(i);
+    float adjValues[ncu];
+    float newValue = qLab.toFloat();
+    model->setValue(i, j, newValue);
+    float operands[nce];
+    for (int k = 0; k < nce; k++) {
+        operands[k] = model->getValue(i, k);
+    }
 }
 
 float Controller::sum(const float *operands) {
