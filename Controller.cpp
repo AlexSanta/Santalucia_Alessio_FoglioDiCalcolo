@@ -10,18 +10,29 @@ void Controller::modify(const int i, const int j, const QString qLab) {
 }
 
 float Controller::sum(const float *operands) {
-    return 0;
+    float sumValue = 0;
+    for (int i = 0; i < nce; i++)
+        sumValue += operands[i];
+    return sumValue;
 }
 
 float Controller::mean(const float sumValue) {
-    return 0;
+    return sumValue / nce;
 }
 
 float Controller::min(const float *operands) {
-    return 0;
+    float minValue = operands[0];
+    for (int i = 1; i < nce; i++)
+        if (operands[i] < minValue)
+            minValue = operands[i];
+    return minValue;
 }
 
 float Controller::max(const float *operands) {
-    return 0;
+    float maxValue = operands[0];
+    for (int i = 1; i < nce; i++)
+        if (operands[i] > maxValue)
+            maxValue = operands[i];
+    return maxValue;
 }
 
