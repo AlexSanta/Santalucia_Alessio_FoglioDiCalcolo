@@ -22,6 +22,8 @@ public:
 
     void setIndex(const int ind);
 
+    void adj(const float[]);
+
     virtual void addObserver(Observer *o) override;
 
     virtual void removeObserver(Observer *o) override;

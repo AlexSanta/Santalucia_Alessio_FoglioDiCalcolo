@@ -26,3 +26,10 @@ void Model::setValue(const int i, const int j, float value) {
 void Model::setIndex(const int ind) {
     index = ind;
 }
+
+void Model::adj(const float *adjValues) {
+    for (int j = 0; j < ncu; j++) {
+        data[index][j + nce] = adjValues[j];
+    }
+    notify();
+}
