@@ -13,6 +13,12 @@ View::~View() {
 }
 
 void View::update() {
+    int index = model->getIndex();
+    int nce = model->getNce();
+    int ncu = model->getNcu();
+    for (int i = 0; i < ncu; i++) {
+        ui->tW->item(index, i + nce)->setText(QString::number(model->getValue(index, i + nce)));
+    }
 }
 
 void View::onCellChanged(int i, int j) {
