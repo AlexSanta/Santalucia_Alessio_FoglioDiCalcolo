@@ -14,6 +14,12 @@ void Controller::modify(const int i, const int j, const QString qLab) {
     for (int k = 0; k < nce; k++) {
         operands[k] = model->getValue(i, k);
     }
+    float sumValue = sum(operands);
+    adjValues[0] = sumValue;
+    adjValues[1] = mean(sumValue);
+    adjValues[2] = min(operands);
+    adjValues[3] = max(operands);
+    model->adj(adjValues);
 }
 
 float Controller::sum(const float *operands) {
