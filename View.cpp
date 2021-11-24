@@ -26,9 +26,10 @@ void View::onCellChanged(int i, int j) {
         if (!ui->tW->item(i, j)->text().toFloat() && ui->tW->item(i, j)->text() != "0") {
             QMessageBox messageBox;
             messageBox.critical(this, "Errore", "Puoi inserire solo numeri!");
-            ui->tW->item(i, j)->setText("0");
+            ui->tW->item(i, j)->setText(QString::number(model->getValue(i, j)));
+        } else {
+            QString qLab = ui->tW->item(i, j)->text();
+            controller->modify(i, j, qLab);
         }
-        QString qLab = ui->tW->item(i, j)->text();
-        controller->modify(i, j, qLab);
     }
 }
