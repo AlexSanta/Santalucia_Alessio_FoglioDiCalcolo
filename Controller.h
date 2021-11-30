@@ -14,6 +14,10 @@ public:
 
     float mean(const float sumValue);
 
+    int getNce() const {return nce;}
+
+    int getNcu() const {return ncu;}
+
     float min(const float *operands);
 
     float max(const float *operands);

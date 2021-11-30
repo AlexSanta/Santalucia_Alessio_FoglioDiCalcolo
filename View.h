@@ -3,7 +3,6 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ViewWindow.h"
-#include "Model.h"
 #include "Controller.h"
 
 class View : public QMainWindow, public Observer {
@@ -15,7 +14,7 @@ public:
 
     virtual void update() override;
 
-    ViewWindow *getUi() { return ui; }
+    ViewWindow *getUi() const { return ui; }
 
 private slots:
 
