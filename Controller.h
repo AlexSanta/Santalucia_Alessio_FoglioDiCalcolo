@@ -14,9 +14,9 @@ public:
 
     float mean(const float sumValue);
 
-    int getNce() const {return nce;}
+    int getNce() const { return nce; }
 
-    int getNcu() const {return ncu;}
+    int getNcu() const { return ncu; }
 
     float min(const float *operands);
 
@@ -24,8 +24,8 @@ public:
 
 private:
     Model *model;
-    int nce;
-    int ncu;
+    const int nce;
+    const int ncu;
 };
 
 #endif //FOGLIODICALCOLO_CONTROLLER_H

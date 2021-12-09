@@ -1,8 +1,6 @@
 #include "Controller.h"
 
-Controller::Controller(Model *m) : model(m) {
-    nce = model->getNce();
-    ncu = model->getNcu();
+Controller::Controller(Model *m) : model(m), nce(model->getNce()), ncu(model->getNcu()) {
 }
 
 void Controller::modify(const int i, const int j, const QString qLab) {
