@@ -10,6 +10,10 @@ protected:
         m.addObserver(this);
     }
 
+    virtual void TearDown() {
+        m.removeObserver(this);
+    }
+
     virtual void update() override { count++; }
 
     int getCount() const { return count; }
