@@ -1,15 +1,19 @@
 #include "gtest/gtest.h"
-
-#include "../View.cpp"
-
+/*
+#include <QApplication>
+#include "../View.h"
 
 class MVCSuite : public ::testing::Test {
 
 protected:
 
     virtual void SetUp() {
+        int i=1;
+        char** l;
+        QApplication app(i,l);
+        m=new Model;
         c=new Controller(m);
-        v=new View(m, c);
+        v=new View(m,c);
         v->getUi()->tW->item(1,0)->setText("12");
         v->getUi()->tW->item(1,1)->setText("3.5");
         v->getUi()->tW->item(1,2)->setText("7");
@@ -39,5 +43,4 @@ TEST_F(MVCSuite, TestChange) {
     ASSERT_EQ("-4", v->getUi()->tW->item(1,6)->text());
     ASSERT_EQ("23", v->getUi()->tW->item(1,7)->text());
 }
-
-
+*/

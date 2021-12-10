@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "../Controller.cpp"
+#include "../Controller.h"
 
 
 TEST(Controller, Constructor) {

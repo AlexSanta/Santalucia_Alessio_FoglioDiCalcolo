@@ -1,9 +1,8 @@
 #include "gtest/gtest.h"
-#include "../Model.cpp"
+#include "../Model.h"
 
 
 TEST(Model, DefaultConstructor) {
-
     Model m;
     ASSERT_EQ(0, m.getIndex());
     ASSERT_EQ(4, m.getNce());
